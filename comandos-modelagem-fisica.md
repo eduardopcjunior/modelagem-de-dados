@@ -18,8 +18,8 @@ CREATE TABLE produtos(
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(45) NOT NULL,
     preco DECIMAL(8,2) NOT NULL,
-    quantidade SMALLINT,
-    descricao TEXT(1000),
+    quantidade SMALLINT NULL,
+    descricao TEXT(1000) NOT NULL,
     fabricante_id INT NOT NULL
 );
 
